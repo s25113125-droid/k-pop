@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-POP 韓星周邊快閃店</title>
+  <!-- 連結 CSS 樣式表 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>🎵 K-POP 韓星周邊快閃店</h1>
+
+  <!-- 團體分類切換按鈕區 -->
+  <div id="group-buttons" class="group-nav"></div>
+
+  <hr>
+
+  <div class="main-layout">
+    <!-- 商品展示區 -->
+    <section class="product-section">
+      <h2 id="current-group-title">請選擇韓星團體</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <!-- 購物車區 -->
+    <section class="cart-section">
+      <h2>🛒 我的購物車</h2>
+      <div id="cart-list"></div>
+      
+      <div class="cart-total">
+        總金額：NT$ <span id="total-price">0</span>
+      </div>
+
+      <!-- 👇 新增：清空與結帳按鈕區 -->
+      <div class="cart-actions" style="margin-top: 15px; display: flex; gap: 10px;">
+        <button id="clear-cart-btn" class="del-btn" style="flex: 1; padding: 8px;">清空購物車</button>
+        <button id="checkout-btn" style="flex: 1; padding: 8px; background-color: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">前往結帳</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- 關鍵：在這裡引用藏在 js 資料夾裡的程式檔 -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
